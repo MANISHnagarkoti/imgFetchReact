@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     setLoad(true);
-    fetch(`${import.meta.env.VITE_BACKEND_URL}api/img`)
+    fetch('https://img-fetch-server.vercel.app/api/img')
       .then((data) => data.json())
       .then((img) => {
         setImgData(img.img);
